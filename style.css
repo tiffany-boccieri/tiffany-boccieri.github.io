@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Tiffany Boccieri for Laguna Hills City Council — District 4
+   Tiffany Boccieri for Laguna Hills City Council - District 4
    Campaign one-pager stylesheet
    ========================================================================== */
 
@@ -32,7 +32,8 @@ body {
 }
 
 h1, h2, h3, .display {
-  font-family: "Anton", "Arial Narrow Bold", sans-serif;
+  font-family: "Montserrat", "Arial Black", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   line-height: 1.05;
@@ -66,6 +67,7 @@ a {
 
 .site-header .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
@@ -74,23 +76,19 @@ a {
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  font-family: "Anton", sans-serif;
+  font-family: "Montserrat", "Arial Black", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
-}
-
-.brand .brand-name {
-  font-size: 1.25rem;
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
   color: var(--ink);
+  white-space: nowrap;
 }
 
-.brand .brand-role {
-  font-size: 0.62rem;
+.dot {
   color: var(--magenta);
-  letter-spacing: 0.12em;
-  margin-top: 3px;
+  font-size: 1.3em;
+  padding: 0 8px;
 }
 
 .site-nav {
@@ -164,40 +162,40 @@ a {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.nav-cta {
-  padding: 10px 22px;
-  font-size: 0.9rem;
-}
-
 /* ---------- Hero ---------- */
 
 .hero {
-  background: var(--magenta);
+  position: relative;
+  background-image: linear-gradient(160deg, rgba(184, 57, 110, 0.92), rgba(110, 34, 66, 0.92)),
+    url("assets/laguna-hills-civic-center.jpg");
+  background-size: cover;
+  background-position: center;
   color: var(--white);
   padding: 64px 0 72px;
   overflow: hidden;
 }
 
-.hero .wrap {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
+.hero-copy {
+  max-width: 900px;
 }
 
-.hero-eyebrow {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  background: rgba(255, 255, 255, 0.16);
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 20px;
+.photo-credit {
+  position: relative;
+  z-index: 1;
+  margin: 8px 24px 0;
+  text-align: right;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.photo-credit a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  white-space: nowrap;
   margin-bottom: 6px;
 }
 
@@ -223,24 +221,6 @@ a {
   gap: 14px;
 }
 
-.hero-photo {
-  position: relative;
-}
-
-.hero-photo .photo-frame {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
-  border: 6px solid rgba(255, 255, 255, 0.9);
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 4 / 5;
-}
-
 /* ---------- Section shell ---------- */
 
 section {
@@ -253,9 +233,10 @@ section {
 
 .eyebrow {
   color: var(--magenta);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  font-family: "Montserrat", "Arial Black", sans-serif;
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
@@ -270,7 +251,6 @@ section {
 .section-lede {
   color: var(--ink-soft);
   font-size: 1.05rem;
-  max-width: 62ch;
   margin-bottom: 40px;
 }
 
@@ -321,14 +301,6 @@ section {
   border-top: 5px solid var(--magenta);
 }
 
-.issue-card .issue-number {
-  font-family: "Anton", sans-serif;
-  color: var(--magenta);
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 12px;
-}
-
 .issue-card h3 {
   font-size: 1.15rem;
   margin-bottom: 12px;
@@ -361,57 +333,8 @@ section {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.involved-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.involved-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius);
-  padding: 28px 24px;
-}
-
-.involved-card h3 {
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.involved-card p {
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.95rem;
-  margin-bottom: 18px;
-}
-
-.involved-card a.btn {
-  font-size: 0.9rem;
-  padding: 10px 20px;
-}
-
-.social-row {
-  display: flex;
-  gap: 14px;
+.involved .btn {
   margin-top: 8px;
-  flex-wrap: wrap;
-}
-
-.social-row a {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.social-row a:hover {
-  background: rgba(255, 255, 255, 0.14);
 }
 
 /* ---------- Footer ---------- */
@@ -433,7 +356,8 @@ section {
 }
 
 .site-footer .footer-brand {
-  font-family: "Anton", sans-serif;
+  font-family: "Montserrat", "Arial Black", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   color: var(--white);
   font-size: 1.1rem;
@@ -445,22 +369,9 @@ section {
   line-height: 1.5;
 }
 
-.placeholder-flag {
-  color: #ffd7e6;
-  font-weight: 600;
-}
-
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
-  .hero .wrap {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-photo {
-    max-width: 320px;
-  }
-
   .about .wrap {
     grid-template-columns: 1fr;
   }
@@ -469,8 +380,7 @@ section {
     max-width: 320px;
   }
 
-  .issues-grid,
-  .involved-grid {
+  .issues-grid {
     grid-template-columns: 1fr;
   }
 
@@ -478,7 +388,8 @@ section {
     gap: 16px;
   }
 
-  .site-nav a:not(.nav-cta) {
-    display: none;
+  .hero h1 {
+    white-space: normal;
+    font-size: clamp(2rem, 9vw, 3rem);
   }
 }
