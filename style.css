@@ -4,7 +4,7 @@
    ========================================================================== */
 
 :root {
-  --magenta: #b8396e;
+  --magenta: #b7396e;
   --magenta-dark: #8f2c56;
   --magenta-darker: #6e2242;
   --pink-tint: #fbeef3;
@@ -166,7 +166,7 @@ a {
 
 .hero {
   position: relative;
-  background-image: linear-gradient(160deg, rgba(184, 57, 110, 0.92), rgba(110, 34, 66, 0.92)),
+  background-image: linear-gradient(rgba(201, 44, 106, 0.82), rgba(201, 44, 106, 0.82)),
     url("assets/laguna-hills-civic-center.jpg");
   background-size: cover;
   background-position: center;
@@ -317,7 +317,7 @@ section {
 /* ---------- Get Involved ---------- */
 
 .involved {
-  background: var(--magenta-darker);
+  background: var(--magenta);
   color: var(--white);
 }
 
@@ -330,7 +330,7 @@ section {
 }
 
 .involved .section-lede {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .involved .btn {
