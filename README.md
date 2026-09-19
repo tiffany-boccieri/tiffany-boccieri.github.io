@@ -6,11 +6,6 @@ Plain static HTML/CSS — no build step, no framework.
 Served by GitHub Pages directly from the `main` branch, at the custom domain
 in [`CNAME`](CNAME).
 
-> **Note:** the bio/issues copy and footer disclosure line in `index.html`
-> are placeholders — review and fact-check before this goes live, and confirm
-> the exact required disclosure wording with the campaign treasurer / FPPC
-> filer.
-
 ## Local preview
 
 No dependencies needed — just Python's built-in server:
