@@ -38,6 +38,7 @@ h1, h2, h3, .display {
   letter-spacing: 0.01em;
   line-height: 1.05;
   margin: 0;
+  text-wrap: balance;
 }
 
 img {
@@ -267,6 +268,7 @@ a {
 .election-line a {
   color: var(--white);
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 /* ---------- Section shell ---------- */
