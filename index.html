@@ -6,6 +6,10 @@
 <title>Tiffany Boccieri for Laguna Hills City Council - District 4</title>
 <meta name="description" content="Tiffany Boccieri, attorney and mother, is running for Laguna Hills City Council, District 4 in the November 3, 2026 election. Learn about her background and priorities for the district." />
 <link rel="canonical" href="https://tiffanyboccieri.com/" />
+<link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/" />
+<link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/" />
+<link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/" />
+<link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Tiffany Boccieri for Laguna Hills City Council - District 4" />
 <meta property="og:description" content="Attorney, mother, and longtime South Orange County resident running for Laguna Hills City Council, District 4. Election: November 3, 2026." />
@@ -13,6 +17,8 @@
 <meta property="og:image" content="https://tiffanyboccieri.com/assets/headshot.jpg" />
 <meta property="og:site_name" content="Tiffany Boccieri for Laguna Hills City Council" />
 <meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_LA" />
+<meta property="og:locale:alternate" content="fa_IR" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,11 +70,18 @@
     <div class="brand">
       <span class="brand-group">Tiffany Boccieri<span class="dot">&middot;</span>City Council</span> <span class="dot">&middot;</span> <span class="brand-group">Laguna Hills District 4</span>
     </div>
-    <nav class="site-nav">
-      <a href="#about">About</a>
-      <a href="#issues">Priorities</a>
-      <a href="#connect">Contact</a>
-    </nav>
+    <div class="header-tools">
+      <nav class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#issues">Priorities</a>
+        <a href="#connect">Contact</a>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <a href="/" hreflang="en" lang="en" aria-current="true">English</a>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/fa/" hreflang="fa" lang="fa">فارسی</a>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -195,6 +208,11 @@
 <script>
   document.querySelectorAll('.js-email-link').forEach(function (link) {
     link.href = 'mailto:' + link.dataset.user + '@' + link.dataset.domain;
+  });
+  document.querySelectorAll('.lang-switch a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      link.hash = window.location.hash;
+    });
   });
 </script>
 
