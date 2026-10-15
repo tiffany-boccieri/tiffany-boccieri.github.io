@@ -616,22 +616,6 @@ section {
   color: var(--magenta);
 }
 
-.site-footer .footer-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.site-footer .footer-nav a {
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.site-footer .footer-nav a:hover {
-  color: var(--white);
-  text-decoration: underline;
-}
-
 .position-card h3 {
   font-size: 1.25rem;
   text-transform: none;
