@@ -20,6 +20,7 @@ Then open http://localhost:8000 in a browser. Stop the server with Ctrl+C.
 
 - `index.html` — the English site (single page)
 - `es/index.html`, `fa/index.html` — Spanish and Farsi (right-to-left) versions
+- `positions/` — issue position pages (English): `index.html` plus one folder per topic
 - `style.css` — all styles, shared by every language
 - `sitemap.xml` — lists all three pages with `hreflang` alternates
 - `assets/` — images
@@ -37,6 +38,16 @@ string ID). When English copy changes, update the matching sheet entry and have 
 native speaker re-check the Spanish and Farsi before publishing. On the Farsi
 page, wrap any English words (place names, the committee name, etc.) in
 `<bdi lang="en">` so they display correctly in right-to-left text.
+
+## Positions
+
+Each position is its own page at `/positions/<slug>/` so it can be linked from
+social posts and found by search. Slugs are permanent once shared. For a new
+position: copy an existing folder, update the title, description, canonical, Open
+Graph, JSON-LD (headline, dates), breadcrumb, answer box, sources, and the
+"More positions" cards, then add the page to `positions/index.html` and
+`sitemap.xml` and link it from the matching priority card on the home page.
+Every factual claim needs a source in the page's Sources list.
 
 ## Workflow
 
