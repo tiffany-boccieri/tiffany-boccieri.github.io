@@ -20,7 +20,7 @@ Then open http://localhost:8000 in a browser. Stop the server with Ctrl+C.
 
 - `index.html` — the English site (single page)
 - `es/index.html`, `fa/index.html` — Spanish and Farsi (right-to-left) versions
-- `positions/` — issue position pages (English): `index.html` plus one folder per topic
+- `positions/` — issue position pages (`index.html` plus one folder per topic); `es/positions/` and `fa/positions/` mirror them
 - `style.css` — all styles, shared by every language
 - `sitemap.xml` — lists all three pages with `hreflang` alternates
 - `assets/` — images
@@ -32,6 +32,8 @@ Each language is its own page and URL (`/`, `/es/`, `/fa/`) so each can be
 indexed, shared, and linked on its own. When site copy changes, update all three
 pages and keep section `id`s (`about`, `issues`, `connect`) identical, since the
 language switcher preserves the visitor's place on the page.
+
+The Positions pages are translated the same way, at `/es/positions/...` and `/fa/positions/...` with identical slugs; a new or edited position needs all three versions and `sitemap.xml` entries with `hreflang` alternates.
 
 Spanish and Farsi copy comes from the campaign's translation sheet (one entry per
 string ID). When English copy changes, update the matching sheet entry and have a
