@@ -67,6 +67,10 @@ The site is built to load fast on poor connections, so keep it light:
   The hero's overlay colour was calibrated so the average colour is exactly `#B7396E`;
   re-check that if the photo is re-encoded.
 - Keep `width`/`height` on new images and use `loading="lazy"` below the fold.
+- **Version the stylesheet.** Browsers may keep `style.css` for 10 minutes, so every page
+  links it as `style.css?v=<hash>`. Whenever `style.css` changes, update that `?v=` on
+  every page in the same commit (otherwise a phone can pair new HTML with an old cached
+  stylesheet, which breaks fonts and layout).
 
 ## Workflow
 
