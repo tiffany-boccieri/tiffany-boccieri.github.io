@@ -3,6 +3,53 @@
    Campaign one-pager stylesheet
    ========================================================================== */
 
+/* ---------- Fonts (self-hosted, Latin and Arabic subsets; SIL Open Font License, see assets/fonts/LICENSE.txt) ---------- */
+
+@font-face {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/anton-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/fonts/montserrat-900-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("assets/fonts/work-sans-400-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("assets/fonts/vazirmatn-400-800-arabic.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-08FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE70-FEFC;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("assets/fonts/vazirmatn-400-800-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --magenta: #b7396e;
   --magenta-dark: #8f2c56;
@@ -43,6 +90,7 @@ h1, h2, h3, .display {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -204,13 +252,22 @@ a {
 
 .hero {
   position: relative;
+  background-color: var(--magenta);
   background-image: linear-gradient(rgba(201, 44, 106, 0.82), rgba(201, 44, 106, 0.82)),
-    url("assets/laguna-hills-civic-center.jpg");
+    url("assets/hero-720.webp");
   background-size: cover;
   background-position: center;
   color: var(--white);
   padding: 64px 0 72px;
   overflow: hidden;
+}
+
+/* Phones get a centred slice of the photo (all that "cover" shows there); wider screens get the full frame. */
+@media (min-width: 601px) {
+  .hero {
+    background-image: linear-gradient(rgba(201, 44, 106, 0.82), rgba(201, 44, 106, 0.82)),
+      url("assets/hero-1280.webp");
+  }
 }
 
 .hero-copy {

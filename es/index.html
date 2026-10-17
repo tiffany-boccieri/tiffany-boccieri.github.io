@@ -20,9 +20,8 @@
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:locale:alternate" content="fa_IR" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/montserrat-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/work-sans-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 {
@@ -113,7 +112,7 @@
 <section class="about" id="about">
   <div class="wrap">
     <div class="about-photo">
-      <img src="/assets/headshot.jpg" alt="Tiffany Boccieri, candidata al Concejo Municipal de Laguna Hills, Distrito 4" />
+      <img src="/assets/headshot-800.webp" srcset="/assets/headshot-480.webp 480w, /assets/headshot-800.webp 800w" sizes="(max-width: 860px) 320px, 400px" width="800" height="1000" alt="Tiffany Boccieri, candidata al Concejo Municipal de Laguna Hills, Distrito 4" loading="lazy" decoding="async" />
     </div>
     <div class="about-body">
       <span class="eyebrow">Conozca a Tiffany</span>

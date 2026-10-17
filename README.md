@@ -51,6 +51,23 @@ Graph, JSON-LD (headline, dates), breadcrumb, answer box, sources, and the
 `sitemap.xml` and link it from the matching priority card on the home page.
 Every factual claim needs a source in the page's Sources list.
 
+## Performance (weak mobile signal)
+
+The site is built to load fast on poor connections, so keep it light:
+
+- **No third-party requests.** Fonts are self-hosted in `assets/fonts/` (Latin and
+  Arabic subsets, SIL Open Font License, see `assets/fonts/LICENSE.txt`) and declared in
+  `style.css` with `font-display: swap`. Every page preloads its main fonts (two for
+  Latin pages, one for Farsi). Do not add Google Fonts or other external scripts or
+  stylesheets.
+- **Images are WebP.** The hero uses `hero-720.webp` on phones (a centred slice, which
+  is all `cover` shows there) and `hero-1280.webp` on wider screens; the about photo uses
+  `headshot-480.webp` / `headshot-800.webp` with `srcset` and lazy loading. The original
+  JPEGs stay in `assets/` as sources (`headshot.jpg` is also the social-share image).
+  The hero's overlay colour was calibrated so the average colour is exactly `#B7396E`;
+  re-check that if the photo is re-encoded.
+- Keep `width`/`height` on new images and use `loading="lazy"` below the fold.
+
 ## Workflow
 
 - Commit directly to `main` for small edits — GitHub Pages redeploys
