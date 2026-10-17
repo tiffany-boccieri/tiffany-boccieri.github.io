@@ -66,10 +66,10 @@ The site is built to load fast on poor connections, so keep it light:
   JPEGs stay in `assets/` as sources (`headshot.jpg` is also the social-share image).
   The hero's overlay colour was calibrated so the average colour is exactly `#B7396E`;
   re-check that if the photo is re-encoded.
-- **Share cards.** Each Positions page (and the Positions index) has a 1200x630 social-share image in
+- **Share cards.** Every page that is shared (home pages, the Positions index and each position) has a 1200x630 social-share image in
   `assets/share/<page>-<lang>.jpg` (headline, headshot, brand line and the small "Paid for by" line), referenced by
   `og:image` and `twitter:image`. The cards show the page headline, so if a position's title changes, regenerate its
-  three cards (English, Spanish, Farsi). The home pages still share `headshot.jpg`.
+  three cards (English, Spanish, Farsi). `headshot.jpg` stays as the Person image in the structured data.
 - Keep `width`/`height` on new images and use `loading="lazy"` below the fold.
 - **Version the stylesheet.** Browsers may keep `style.css` for 10 minutes, so every page
   links it as `style.css?v=<hash>`. Whenever `style.css` changes, update that `?v=` on
