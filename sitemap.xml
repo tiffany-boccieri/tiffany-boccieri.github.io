@@ -86,8 +86,44 @@
   </url>
   <url>
     <loc>https://tiffanyboccieri.com/positions/wildfire-readiness/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
+  </url>
+  <url>
+    <loc>https://tiffanyboccieri.com/es/positions/wildfire-readiness/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
+  </url>
+  <url>
+    <loc>https://tiffanyboccieri.com/fa/positions/wildfire-readiness/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/wildfire-readiness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/wildfire-readiness/" />
   </url>
   <url>
     <loc>https://tiffanyboccieri.com/positions/community-policing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/community-policing/" />
+  </url>
+  <url>
+    <loc>https://tiffanyboccieri.com/es/positions/community-policing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/community-policing/" />
+  </url>
+  <url>
+    <loc>https://tiffanyboccieri.com/fa/positions/community-policing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiffanyboccieri.com/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiffanyboccieri.com/es/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://tiffanyboccieri.com/fa/positions/community-policing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiffanyboccieri.com/positions/community-policing/" />
   </url>
 </urlset>
