@@ -664,6 +664,11 @@ section {
   font-size: 0.96rem;
 }
 
+.issue-card .read-more + .read-more {
+  display: table;
+  margin-top: 6px;
+}
+
 .brand a {
   color: inherit;
   text-decoration: none;
